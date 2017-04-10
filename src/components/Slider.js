@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 
 class Slider extends Component {
+  // let currentHue = this.props.hue
   render () {
     return <div className='sliders'>
       <div className='hue'>
@@ -8,7 +9,7 @@ class Slider extends Component {
         <input type='range' onInput={this.props._HueChange} max='360' />
       </div>
       <div className='sat'>
-        <div className='info'><p>SATURATION</p><div className='preview previewSat' /></div>
+        <div className='info'><p>SATURATION</p><div className='preview previewSat' style={{backgroundColor: `hsla(${this.props.hue}, 50%, 50%)`}} /></div>
         <input type='range' onInput={this.props._SatChange} max='100' />
       </div>
       <div className='light'>
