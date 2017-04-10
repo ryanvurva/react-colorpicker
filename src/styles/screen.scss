@@ -10,4 +10,141 @@ html {
 body {
   margin: 0;
   font: $base-text-size / 1 $base-font-family;
+  display: flex;
+  justify-content: center;
+  align-items: center  ;
+  flex-flow: column;
+}
+
+.colorpicker {
+  background-color: hsl(240, 0%, 80%);
+  width: 600px;
+  height: 600px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  border-radius: 5px;
+  margin: auto;
+}
+
+h1 {
+  margin: 0 auto 30px auto;
+  text-align: center;
+
+}
+
+.hue {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.sat {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.light {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.alpha {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.colorpicker p {
+  margin: 0 auto 0 20px;
+  width: 100px;
+  font-weight: bold;
+  font-size: 10px;
+  color: hsl(0, 0%, 36%);
+}
+
+.code {
+  color: #fff;
+  background-color: hsl(0, 0%, 36%);
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+.sliders {
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  margin: 0 20px 0 20px;
+}
+
+.sliders input {
+  margin: 20px;
+}
+
+.colordisplay {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  background-image: url('../images/vector.jpg');
+  overflow: hidden;
+  background-size: contain;
+  border-radius: 5px;
+}
+
+.colordisplay .swatch {
+    width: 110px;
+    height: 110px;
+    background-color: #ccc;
+    border: 4px solid hsl(0, 0%, 36%);
+    border-radius: 5px;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-right: 20px;
+}
+
+.preview {
+  padding: 5px;
+  background-color: blue;
+  width: 100px;
+  height: 20px;
+}
+
+.previewHue {
+  background: linear-gradient(to right, hsl(0, 100%, 50%), hsl(90, 100%, 50%), hsl(180, 100%, 50%), hsl(270, 100%, 50%), hsl(359, 100%, 50%));
+}
+
+.previewSat {
+  background: linear-gradient(to right, hsl(0, 0%, 50%), hsl(0, 100%, 50%));
+}
+
+.previewLight {
+  background: linear-gradient(to right, hsl(0, 0%, 0%), hsl(0, 0%, 100%));
+}
+
+.previewAlpha {
+  background: linear-gradient(to right, hsla(0, 100%, 50%, 0), hsla(0, 100%, 50%, 1));
 }
