@@ -1,14 +1,17 @@
 import React, { Component } from 'react'
+import store from '../store'
+import {observer} from 'mobx-react'
 
+@observer
 class Code extends Component {
   render () {
     if (this.props.alpha < 1) {
       return <div className='code'>
-        <span>{`hsla(${this.props.hue}, ${this.props.saturation}, ${this.props.lightness}, ${this.props.alpha})`}</span>
+        <span>{store.color}</span>
       </div>
     } else {
       return <div className='code'>
-        <span>{`hsl(${this.props.hue}, ${this.props.saturation}, ${this.props.lightness})`}</span>
+        <span>{store.color}</span>
       </div>
     }
   }

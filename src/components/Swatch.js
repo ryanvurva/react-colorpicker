@@ -1,9 +1,12 @@
 import React, { Component } from 'react'
+import store from '../store'
+import {observer} from 'mobx-react'
 
+@observer
 class Swatch extends Component {
   render () {
     return <div className='colordisplay'>
-      <div className='swatch' style={{backgroundColor: `hsla(${this.props.hue}, ${this.props.saturation}%, ${this.props.lightness}%, ${this.props.alpha})`}} />
+      <div className='swatch' style={{backgroundColor: store.color}} />
     </div>
   }
 }
