@@ -1,3 +1,3 @@
 # React Colorpicker
 
-![Color Picker](colorpicker.gif)
+![Color Picker](color-picker.gif)
